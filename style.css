@@ -1,0 +1,30 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cylinder {
+    width: 100%;
+    height: auto;
+    @media (min-width: 1024px) {
+        border-bottom-left-radius: 100% 100%;
+        border-bottom-right-radius: 100% 100%;
+    }
+    border-bottom-left-radius: 130% 60%;
+    border-bottom-right-radius: 130% 60%;
+    background: #FFF6CC;
+}
+
+.tilt_edge{
+	clip-path: polygon(0 0, 100% 20vw, 100% 100%, 0 100%);
+  	-webkit-clip-path: polygon(0 0, 100% 20vw, 100% 100%, 0 100%);
+    @media (min-width: 768px) {
+        clip-path: polygon(0 0, 100% 10vw, 100% 100%, 0 100%);
+  	    -webkit-clip-path: polygon(0 0, 100% 10vw, 100% 100%, 0 100%);
+    }
+    border-radius: 20px;
+}
+
+.bgImage{
+    background-image: url('./images/form background.png');
+}
